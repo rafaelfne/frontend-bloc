@@ -1,0 +1,1 @@
+export { StockRepository } from "./StockRepository";

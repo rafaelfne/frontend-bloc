@@ -1,0 +1,33 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "no-console": "error",
+    "space-before-function-paren": "off",
+    "space-in-parens": "off",
+    "comma-style": "error",
+    "comma-dangle": "error",
+    "semi": "error",
+    "callback-return": "error",
+    "array-bracket-spacing": "error",
+    "no-trailing-spaces": "error",
+    "block-spacing": "error",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      }
+    ]
+  }
+}
