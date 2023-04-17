@@ -1,0 +1,161 @@
+module.exports = {
+  "id": "00fb4c52-5626-4a5b-81ad-e22be799d7f4",
+  "isinCode": "",
+  "document": "30271177000193",
+  "legalName": "WARREN FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO MULTIMERCADO CRÉDITO PRIVADO",
+  "firstQuotaDate": "2018-05-29T00:00:00",
+  "lastQuoteDate": "2023-04-12T00:00:00",
+  "status": "ATIVO",
+  "initialDate": "2018-05-30T00:00:00",
+  "netTotalValue": 340446608.78,
+  "shareholderQuantity": 38546,
+  "benchmark": "CDI",
+  "quoteValue": 1.42764967,
+  "administrationFee": "0,00%",
+  "isExclusiveFund": false,
+  "isFundOfFunds": true,
+  "isLongTerm": true,
+  "isQualifiedInvestor": false,
+  "anbimaClassIdentifier": "multimercado",
+  "anbimaSubclassIdentifier": "multimercados-livre",
+  "administratorIdentifier": "warren-corretora-de-valores-mobiliarios-e-cambio-ltda",
+  "anbimaClass": {
+      "identifier": "multimercado",
+      "name": "Multimercados",
+      "benchmarkId": 1,
+      "classOrder": 2,
+      "color": "#FF7A00"
+  },
+  "anbimaSubclass": {
+      "identifier": "multimercados-livre",
+      "name": "Livre",
+      "color": "#592B00"
+  },
+  "statistics": {
+      "monthlyReturn": 0.004138749084993168,
+      "annualReturn": 0.03620953079711753,
+      "inceptionReturn": 0.42764967,
+      "past12MonthsReturn": 0.13556167654359905,
+      "past12MonthsVolatility": 0.0035135996600786958,
+      "sharpeRatio": 0,
+      "past12MonthsAverageNetTotalValue": 418708071.57
+  },
+  "administrator": {
+      "id": "fb2f6a3e-cb1b-4286-ae04-a528b2ed7e6e",
+      "identifier": "warren-corretora-de-valores-mobiliarios-e-cambio-ltda",
+      "name": "WARREN CORRETORA DE VALORES MOBILIÁRIOS E CÂMBIO LTDA.",
+      "nickname": "WARREN CORRETORA DE VALORES MOBILIÁRIOS E CÂMBIO LTDA.",
+      "document": "92875780000131",
+      "countryId": "BR"
+  },
+  "custodians": [
+      {
+          "id": "a15a03c4-e299-4430-8bf9-7dc1c1461577",
+          "identifier": "banco-b3-sa",
+          "name": "BANCO B3 S.A.",
+          "nickname": "BANCO B3 S.A.",
+          "document": "00997185000150",
+          "countryId": "BR"
+      }
+  ],
+  "managers": [
+      {
+          "id": "eede3336-9598-4241-bce6-d96b059e82f5",
+          "identifier": "warren-brasil-gestao-e-administracao-de-recursos-ltda",
+          "name": "WARREN BRASIL GESTÃO E ADMINISTRAÇÃO DE RECURSOS LTDA",
+          "nickname": "WARREN BRASIL GESTÃO E ADMINISTRAÇÃO DE RECURSOS LTDA",
+          "document": "24176946000171",
+          "countryId": "BR"
+      }
+  ],
+  "distributors": [
+      {
+          "id": "fb2f6a3e-cb1b-4286-ae04-a528b2ed7e6e",
+          "identifier": "warren-corretora-de-valores-mobiliarios-e-cambio-ltda",
+          "name": "WARREN CORRETORA DE VALORES MOBILIÁRIOS E CÂMBIO LTDA.",
+          "nickname": "WARREN CORRETORA DE VALORES MOBILIÁRIOS E CÂMBIO LTDA.",
+          "document": "92875780000131",
+          "countryId": "BR"
+      }
+  ],
+  "relatedFunds": [
+      {
+          "id": "37400ed4-6267-4e56-a40c-78c51c5515a9",
+          "isinCode": "",
+          "document": "40826591000175",
+          "legalName": "SCUDO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO MULTIMERCADO CRÉDITO PRIVADO",
+          "firstQuotaDate": "2021-11-16T00:00:00",
+          "lastQuoteDate": "2023-04-12T00:00:00",
+          "status": "ATIVO",
+          "initialDate": "2021-12-08T00:00:00",
+          "netTotalValue": 2374881.15,
+          "shareholderQuantity": 21,
+          "benchmark": "CDI",
+          "quoteValue": 1.09817823,
+          "administrationFee": "1,10%",
+          "isExclusiveFund": false,
+          "isFundOfFunds": true,
+          "isLongTerm": false,
+          "isQualifiedInvestor": false,
+          "anbimaClassIdentifier": "multimercado",
+          "anbimaSubclassIdentifier": "multimercados-livre",
+          "administratorIdentifier": "warren-corretora-de-valores-mobiliarios-e-cambio-ltda",
+          "name": "SCUDO FIC FIM CP",
+          "type": "Asset",
+          "identifier": "scudo-fic-fim-cp"
+      },
+      {
+          "id": "200d5070-51c4-4295-b378-3901a8924295",
+          "isinCode": "",
+          "document": "44195356000101",
+          "legalName": "SP WEALTH FUNDO DE INVESTIMENTO MULTIMERCADO CRÉDITO PRIVADO INVESTIMENTO NO EXTERIOR",
+          "firstQuotaDate": "2021-11-26T00:00:00",
+          "lastQuoteDate": "2023-04-12T00:00:00",
+          "status": "ATIVO",
+          "initialDate": "2021-12-15T00:00:00",
+          "netTotalValue": 7441497.97,
+          "shareholderQuantity": 3,
+          "benchmark": "IPCA",
+          "quoteValue": 1.09159666,
+          "administrationFee": "0,40%",
+          "isExclusiveFund": false,
+          "isFundOfFunds": false,
+          "isLongTerm": false,
+          "isQualifiedInvestor": false,
+          "anbimaClassIdentifier": "multimercado",
+          "anbimaSubclassIdentifier": "multimercados-invest.-no-exterior",
+          "administratorIdentifier": "warren-corretora-de-valores-mobiliarios-e-cambio-ltda",
+          "name": "SP WEALTH FIM CP IE",
+          "type": "Asset",
+          "identifier": "sp-wealth-fim-cp-ie"
+      },
+      {
+          "id": "f34182ec-644d-4487-974b-2dc4859536e9",
+          "isinCode": "",
+          "document": "41970027000194",
+          "legalName": "VERDE AM W60 WARREN FEEDER FUNDO DE INVESTIMENTO EM COTAS DE FUNDO DE INVESTIMENTO MULTIMERCADO",
+          "firstQuotaDate": "2021-06-29T00:00:00",
+          "lastQuoteDate": "2023-04-12T00:00:00",
+          "status": "ATIVO",
+          "initialDate": "2021-06-29T00:00:00",
+          "netTotalValue": 27375335.63,
+          "shareholderQuantity": 186,
+          "benchmark": "OUTROS",
+          "quoteValue": 1.13162821,
+          "administrationFee": "0,60%",
+          "isExclusiveFund": false,
+          "isFundOfFunds": true,
+          "isLongTerm": true,
+          "isQualifiedInvestor": false,
+          "anbimaClassIdentifier": "multimercado",
+          "anbimaSubclassIdentifier": "multimercados-macro",
+          "administratorIdentifier": "warren-corretora-de-valores-mobiliarios-e-cambio-ltda",
+          "name": "VERDE AM W60 WARREN FEEDER FIC FIM",
+          "type": "Asset",
+          "identifier": "verde-am-w60-warren-feeder-fic-fim"
+      }
+  ],
+  "name": "WARREN FIC FIM CP",
+  "type": "Asset",
+  "identifier": "warren-fic-fim-cp"
+}

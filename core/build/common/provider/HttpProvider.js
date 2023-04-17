@@ -11,7 +11,7 @@ import axios from "axios";
 import { injectable } from "inversify";
 let HttpProvider = class HttpProvider {
     constructor() {
-        axios.defaults.baseURL = "https://apidojo-yahoo-finance-v1.p.rapidapi.com";
+        axios.defaults.baseURL = "http://localhost:3000";
     }
     get(url, config) {
         return axios.get(url, config);

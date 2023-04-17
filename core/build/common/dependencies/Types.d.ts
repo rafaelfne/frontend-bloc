@@ -5,5 +5,7 @@ declare const TYPES: {
     IUsecaseCallback: symbol;
     StockViewLogic: symbol;
     ViewLogic: symbol;
+    IFundsRepository: symbol;
+    FundViewLogic: symbol;
 };
 export { TYPES };

@@ -1,9 +1,10 @@
 import { DeepReadonly, Plugin, Ref } from 'vue'
-import { DependenciesLocator, StockViewLogic, TStockState, TYPES } from '!@/build'
+import { DependenciesLocator, FundViewLogic, StockViewLogic, TFundState, TStockState, TYPES } from '!@/build'
 import { useViewLogicState } from '../UseViewLogicState'
 
 export interface Dependencies {
   provideStock(): Dependency<StockViewLogic, TStockState>;
+  provideFund(): Dependency<FundViewLogic, TFundState>;
 }
 
 export interface Dependency<Bloc, State> {
@@ -17,6 +18,11 @@ dependenciesLocator.defineDependencies()
 export const dependencies: Dependencies = {
   provideStock(): Dependency<StockViewLogic, TStockState> {
     const viewLogic = dependenciesLocator.get<StockViewLogic>(TYPES.StockViewLogic)
+    const state = useViewLogicState(viewLogic)
+    return { bloc: viewLogic, state }
+  },
+  provideFund(): Dependency<FundViewLogic, TFundState> {
+    const viewLogic = dependenciesLocator.get<FundViewLogic>(TYPES.FundViewLogic)
     const state = useViewLogicState(viewLogic)
     return { bloc: viewLogic, state }
   }
