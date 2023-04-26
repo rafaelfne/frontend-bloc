@@ -1,4 +1,4 @@
-import { ViewLogic, DataError, IUsecase, TYPES } from "../../common";
+import { ViewLogic, DataError, IUsecase } from "../../common";
 import { inject, injectable } from "inversify";
 import { TFundState, fundInitialState } from "./FundState";
 import { GetFundParams, IFund } from "../domain";
@@ -6,7 +6,7 @@ import { GetFundParams, IFund } from "../domain";
 @injectable()
 export class FundViewLogic extends ViewLogic<TFundState> {
   constructor(
-    @inject(TYPES.IUsecase)
+    @inject("IUsecase")
     private getFundUsecase: IUsecase
   ) {
     super(fundInitialState);

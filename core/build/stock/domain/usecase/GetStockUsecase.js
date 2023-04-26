@@ -16,7 +16,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import { TYPES } from "../../../common";
 import { inject, injectable } from "inversify";
 let GetStockUsecase = class GetStockUsecase {
     execute(params) {
@@ -26,7 +25,7 @@ let GetStockUsecase = class GetStockUsecase {
     }
 };
 __decorate([
-    inject(TYPES.IStockRepository),
+    inject("IStockRepository"),
     __metadata("design:type", Object)
 ], GetStockUsecase.prototype, "repository", void 0);
 GetStockUsecase = __decorate([

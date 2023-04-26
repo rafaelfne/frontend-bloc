@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "outDir": "./build",
-    "rootDir": "./src",
     "declaration": true,
     "allowJs": false,
     "sourceMap": true,
@@ -18,9 +17,10 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "useUnknownInCatchVariables": false,
-    "types": ["reflect-metadata"]
+    "types": ["reflect-metadata"],
+    "baseUrl": "./src",
+    "rootDir": "./src",
   },
   "include": ["./src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"],
-  "baseUrl": "./"
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*/test/**/*"]
 }

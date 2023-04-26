@@ -17,7 +17,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 import { inject, injectable } from "inversify";
-import { TYPES } from "../../../common";
 let GetFundBuNameUsecase = class GetFundBuNameUsecase {
     execute(params) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -26,7 +25,7 @@ let GetFundBuNameUsecase = class GetFundBuNameUsecase {
     }
 };
 __decorate([
-    inject(TYPES.IFundsRepository),
+    inject("IFundsRepository"),
     __metadata("design:type", Object)
 ], GetFundBuNameUsecase.prototype, "fundsRepository", void 0);
 GetFundBuNameUsecase = __decorate([

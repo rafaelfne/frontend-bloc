@@ -1,4 +1,4 @@
-import { ViewLogic, DataError, IUsecase, TYPES } from "../../common";
+import { ViewLogic, DataError, IUsecase } from "../../common";
 import { inject, injectable } from "inversify";
 import { TStockState, stockInitialState } from "./StockState";
 import { GetStockParams, IStock } from "../domain";
@@ -6,7 +6,7 @@ import { GetStockParams, IStock } from "../domain";
 @injectable()
 export class StockViewLogic extends ViewLogic<TStockState> {
   constructor(
-    @inject(TYPES.IUsecase)
+    @inject("IUsecase")
     private getStockUsecase: IUsecase
   ) {
     super(stockInitialState);

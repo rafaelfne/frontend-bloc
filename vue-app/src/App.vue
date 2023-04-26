@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
-import { getStockAction, getFundAction } from './actions';
+import { getFundAction } from './actions';
 const { getFund, fundState } = getFundAction();
 
 onMounted(() => {

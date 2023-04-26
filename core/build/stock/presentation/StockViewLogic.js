@@ -19,7 +19,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import { ViewLogic, TYPES } from "../../common";
+import { ViewLogic } from "../../common";
 import { inject, injectable } from "inversify";
 import { stockInitialState } from "./StockState";
 let StockViewLogic = class StockViewLogic extends ViewLogic {
@@ -47,7 +47,7 @@ let StockViewLogic = class StockViewLogic extends ViewLogic {
 };
 StockViewLogic = __decorate([
     injectable(),
-    __param(0, inject(TYPES.IUsecase)),
+    __param(0, inject("IUsecase")),
     __metadata("design:paramtypes", [Object])
 ], StockViewLogic);
 export { StockViewLogic };

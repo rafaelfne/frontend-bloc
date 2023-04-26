@@ -1,6 +1,7 @@
+import { Container } from 'inversify';
 declare class DependenciesLocator {
     private container;
-    defineDependencies(): void;
-    get<T>(type: symbol): T;
+    defineDependencies(): Container;
+    get<T>(type: string): T;
 }
 export { DependenciesLocator };

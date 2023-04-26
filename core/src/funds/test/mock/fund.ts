@@ -1,4 +1,4 @@
-module.exports = {
+export const fund =  {
   "id": "00fb4c52-5626-4a5b-81ad-e22be799d7f4",
   "isinCode": "",
   "document": "30271177000193",
@@ -157,5 +157,5 @@ module.exports = {
   ],
   "name": "WARREN FIC FIM CP",
   "type": "Asset",
-  "identifier": "warren-fic-fim-cp-1"
-}
+  "identifier": "warren-fic-fim-cp"
+};

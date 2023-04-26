@@ -1,6 +1,5 @@
 import { HttpProvider } from '../provider/HttpProvider';
 import { Container } from 'inversify';
-import { TYPES } from './Types';
 import { ViewLogic } from '../presentation';
 import { GetStockUsecase, IStockRepository, StockViewLogic, StockRepository, TStockState } from '../../stock';
 import { IHttpProvider } from '../domain';
@@ -12,16 +11,17 @@ class DependenciesLocator {
   });
 
   defineDependencies() {
-    this.container.bind<IHttpProvider>(TYPES.IHttpProvider).to(HttpProvider).inSingletonScope();
-    this.container.bind<ViewLogic<TStockState>>(TYPES.StockViewLogic).to(StockViewLogic);
-    this.container.bind<IUsecase>(TYPES.IUsecase).to(GetStockUsecase).whenInjectedInto(StockViewLogic);
-    this.container.bind<IStockRepository>(TYPES.IStockRepository).to(StockRepository);
-    this.container.bind<ViewLogic<TFundState>>(TYPES.FundViewLogic).to(FundViewLogic);
-    this.container.bind<IFundsRepository>(TYPES.IFundsRepository).to(FundsRepository);
-    this.container.bind<IUsecase>(TYPES.IUsecase).to(GetFundBuNameUsecase).whenInjectedInto(FundViewLogic);
+    this.container.bind<IHttpProvider>("IHttpProvider").to(HttpProvider).inSingletonScope();
+    this.container.bind<ViewLogic<TStockState>>("StockViewLogic").to(StockViewLogic);
+    this.container.bind<IUsecase>("IUsecase").to(GetStockUsecase).whenInjectedInto(StockViewLogic);
+    this.container.bind<IStockRepository>("IStockRepository").to(StockRepository);
+    this.container.bind<ViewLogic<TFundState>>("FundViewLogic").to(FundViewLogic);
+    this.container.bind<IFundsRepository>("IFundsRepository").to(FundsRepository);
+    this.container.bind<IUsecase>("IUsecase").to(GetFundBuNameUsecase).whenInjectedInto(FundViewLogic);
+    return this.container;
   }
 
-  get<T>(type: symbol): T {
+  get<T>(type: string): T {
     return this.container.get<T>(type);
   }
 }

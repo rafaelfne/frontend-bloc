@@ -5,4 +5,5 @@ export interface IFund {
   document: string;
   formattedDocument: string;
   status: string;
+  identifier: string;
 }

@@ -1,6 +1,6 @@
-import { DataError, Either, TYPES, IHttpProvider } from "../../common";
+import { DataError, Either, IHttpProvider } from "../../common";
 import { GetStockParams, IStockRepository, IStock } from "..";
-import { injectable, inject } from "inversify";
+import { inject, injectable } from "inversify";
 
 const getStockParamsDefault: GetStockParams = {
   symbol: "",
@@ -11,7 +11,7 @@ const getStockParamsDefault: GetStockParams = {
 
 @injectable()
 export class StockRepository implements IStockRepository {
-  @inject(TYPES.IHttpProvider) private httpProvider!: IHttpProvider;
+  constructor(@inject("IHttpProvider") private httpProvider: IHttpProvider) {}
   async getStock(params: GetStockParams): Promise<Either<DataError, IStock>> {
     return new Promise((resolve) => {
       params = { ...getStockParamsDefault, ...params };
