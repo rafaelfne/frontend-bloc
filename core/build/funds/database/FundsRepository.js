@@ -19,7 +19,7 @@ let FundsRepository = class FundsRepository {
     }
     getFundByName(params) {
         return new Promise((resolve) => {
-            this.httpProvider.get(`/funds/${params.name}`)
+            this.httpProvider.get(`/v1/funds/${params.name}`)
                 .then((response) => {
                 resolve(Either.right(parseFund(response.data)));
             })

@@ -1,3 +1,5 @@
+import { IFundStatistics } from "./IFundStatistics";
+
 export interface IFund {
   id: string;
   name: string;
@@ -6,4 +8,10 @@ export interface IFund {
   formattedDocument: string;
   status: string;
   identifier: string;
+  quoteValue: number;
+  quoteValueFormatted: string;
+  netTotalValue: number;
+  netTotalValueFormatted: string;
+  initialDate: string;
+  statitiscs: IFundStatistics;
 }

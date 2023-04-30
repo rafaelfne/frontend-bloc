@@ -8,4 +8,7 @@ module.exports = async function (fastify) {
   fastify.get('/warren-fic-fim-cp', async function () {
     return data
   })
+  fastify.get('/warren-fic-fim-cp/statistics', async function () {
+    return data.statistics
+  })
 }
