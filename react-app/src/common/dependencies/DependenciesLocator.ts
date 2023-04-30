@@ -1,5 +1,4 @@
-import { DeepReadonly, Plugin, Ref } from 'vue'
-import { DependenciesLocator, FundViewLogic, StockViewLogic, TFundState, TStockState } from '!@/build'
+import { DependenciesLocator, FundViewLogic, StockViewLogic, TFundState, TStockState } from '!@/build';
 import { useViewLogicState } from '../UseViewLogicState'
 
 export interface Dependencies {
@@ -8,7 +7,7 @@ export interface Dependencies {
 }
 
 export interface Dependency<ViewLogic, State> {
-  state: DeepReadonly<Ref<State>>,
+  state: State,
   viewLogic: ViewLogic
 }
 
@@ -27,11 +26,3 @@ export const dependencies: Dependencies = {
     return { viewLogic, state }
   }
 }
-
-const plugin: Plugin = {
-  async install(app) {
-    app.provide("dependencies", dependencies)
-  },
-}
-
-export default plugin

@@ -3,7 +3,7 @@ import { dependencies } from "@/common/dependencies";
 import { ref } from "vue";
 
 export const getStockAction = () => {
-  const { state, bloc } = dependencies.provideStock()
+  const { state, viewLogic } = dependencies.provideStock()
   const getStockParams = ref({
     symbol: "",
     interval: "1d",
@@ -12,6 +12,6 @@ export const getStockAction = () => {
   return {
     stockState: state,
     getStockParams,
-    getStock: (params: GetStockParams) => bloc.getStock({ ...params, ...{ interval: "1d", range: "1mo" } })
+    getStock: (params: GetStockParams) => viewLogic.getStock({ ...params, ...{ interval: "1d", range: "1mo" } })
   };
 }
