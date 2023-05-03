@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 html, body {
-  @apply bg-stone-900;
-  @apply text-zinc-300;
+  background: #333131;
+  @apply text-zinc-100;
+}
+
+h1, h3, h5 {
+  color: #c7935a;
 }
