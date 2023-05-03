@@ -31,6 +31,7 @@ describe("FundsRepository", () => {
     const params: GetFundParams = {
       name: "warren-fic-fim-cp"
     };
+
     test("should return the parsed fund when the HTTP requests succeed", async () => {
       httpProviderMock.get.mockImplementationOnce(() => Promise.resolve({ data: fund }));
       httpProviderMock.get.mockImplementationOnce(() => Promise.resolve({ data: statistics }));

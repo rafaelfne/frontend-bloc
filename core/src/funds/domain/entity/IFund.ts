@@ -13,5 +13,8 @@ export interface IFund {
   netTotalValue: number;
   netTotalValueFormatted: string;
   initialDate: string;
+  initialDateFormatted: string;
   statistics: IFundStatistics;
+  benchmark: string;
+  shareholderQuantity: number;
 }

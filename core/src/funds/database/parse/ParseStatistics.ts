@@ -1,5 +1,5 @@
-import { IFundStatistics } from "funds/domain";
-import { formatPercentage } from "common/formatters";
+import { IFundStatistics } from "../../domain";
+import { formatNumber, formatPercentage } from "../../../common/formatters";
 
 
 export const parseStatistics = (statistics: IFundStatistics): IFundStatistics => {
@@ -16,7 +16,7 @@ export const parseStatistics = (statistics: IFundStatistics): IFundStatistics =>
     inceptionReturnFormatted: formatPercentage(statistics.inceptionReturn),
     past12MonthsReturnFormatted: formatPercentage(statistics.past12MonthsReturn),
     past12MonthsVolatilityFormatted: formatPercentage(statistics.past12MonthsVolatility),
-    sharpeRatioFormatted: formatPercentage(statistics.sharpeRatio),
-    past12MonthsAverageNetTotalValueFormatted: formatPercentage(statistics.past12MonthsAverageNetTotalValue)
+    sharpeRatioFormatted: formatNumber(statistics.sharpeRatio),
+    past12MonthsAverageNetTotalValueFormatted: formatNumber(statistics.past12MonthsAverageNetTotalValue)
   };
 };

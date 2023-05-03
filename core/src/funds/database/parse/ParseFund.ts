@@ -1,4 +1,4 @@
-import { formatDate, formatNumber } from "common/formatters";
+import { formatDate, formatNumber } from "../../../common/formatters";
 import { IFund, IFundStatistics } from "../../domain";
 import { parseStatistics } from "./ParseStatistics";
 
@@ -14,8 +14,11 @@ export const parseFund = (fund: IFund, statistics?: IFundStatistics): IFund => {
     quoteValue: fund.quoteValue,
     quoteValueFormatted: formatNumber(fund.quoteValue),
     initialDate: formatDate(fund.initialDate),
+    initialDateFormatted: formatDate(fund.initialDate),
     netTotalValue: fund.netTotalValue,
     netTotalValueFormatted: formatNumber(fund.netTotalValue),
-    statistics: parseStatistics(fund.statistics || statistics)
+    statistics: parseStatistics(fund.statistics || statistics),
+    benchmark: fund.benchmark,
+    shareholderQuantity: fund.shareholderQuantity
   };
 };
