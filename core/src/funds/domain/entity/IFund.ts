@@ -13,5 +13,5 @@ export interface IFund {
   netTotalValue: number;
   netTotalValueFormatted: string;
   initialDate: string;
-  statitiscs: IFundStatistics;
+  statistics: IFundStatistics;
 }

@@ -16,6 +16,6 @@ export const parseFund = (fund: IFund, statistics?: IFundStatistics): IFund => {
     initialDate: formatDate(fund.initialDate),
     netTotalValue: fund.netTotalValue,
     netTotalValueFormatted: formatNumber(fund.netTotalValue),
-    statitiscs: parseStatistics(fund.statitiscs || statistics)
+    statistics: parseStatistics(fund.statistics || statistics)
   };
 };
